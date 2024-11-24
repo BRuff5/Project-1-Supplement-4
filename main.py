@@ -74,8 +74,13 @@ if __name__ == "__main__":
     """
     
     next_numbers = get_next_ten_numbers(num)
+    
+    
+    
+    next_numbers_string = list_to_comma_delimited_string(next_numbers)
+    
     """
-    Gets the next ten numbers
+    Convert the next numbers to a comma-delimited string
     Args:
-       Get the next 10 numbers.
+       Convert the next numbers to a comma-delimited string
     """
