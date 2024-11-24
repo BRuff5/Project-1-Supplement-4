@@ -67,36 +67,48 @@ if __name__ == "__main__":
     try:
         num = int(user_input)  
         
-    """
-    Converts input to an integer.
-    Args:
-       Takes input and turns into integer
-    """
+        """
+        Converts input to an integer.
+        Args:
+            Takes input and turns into integer
+        """
     
-    next_numbers = get_next_ten_numbers(num)
+        next_numbers = get_next_ten_numbers(num)
     
-    """
-    Gets the next ten numbers
-    Args:
-       Get the next 10 numbers.
-    """
+        """
+        Gets the next ten numbers
+        Args:
+        Get the next 10 numbers.
+        """
     
-    next_numbers_string = list_to_comma_delimited_string(next_numbers)
+        next_numbers_string = list_to_comma_delimited_string(next_numbers)
     
-    """
-    Convert the next numbers to a comma-delimited string
-    Args:
-       Convert the next numbers to a comma-delimited string
-    """
+        """
+        Convert the next numbers to a comma-delimited string
+        Args:
+        Convert the next numbers to a comma-delimited string
+        """
     
     
-    headers = ["Starting Number", "Next 10 Numbers"]
-    data = [str(number), next_numbers_string]
+        headers = ["Starting Number", "Next 10 Numbers"]
+        data = [str(number), next_numbers_string]
     
-    """
-    Create headers and data for CSV file
-    Args:
+        """
         Create headers and data for CSV file
-    Result:
-        Data and Headers stored in CSV file
-    """
+        Args:
+            Create headers and data for CSV file
+        Result:
+            Data and Headers stored in CSV file
+        """
+    
+        filename = 'output.csv'
+        write_to_csv(headers, data, filename)
+    
+        """
+        Create the CSV file for the program
+        Args:
+            Creates a CSV file
+        Result:
+            CSV file is created and connected to program
+        """
+    
