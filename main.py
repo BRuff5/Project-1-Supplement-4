@@ -30,10 +30,25 @@ def write_to_csv(headers, data, filename):
         writer.writerow(data)     
         
     """
-    Write headers and data to a CSV file.
+    Compiles headers and data to a CSV file.
     Args:
         Headers: Creates headers for the CSV file.
         Data: Stores the data in CSV file.
     Result:
         Creates the CSV file
+    """
+    
+def read_and_display_csv(filename):
+    print("\nThe CSV file includes:")
+    with open(filename, mode='r') as file:
+        reader = csv.reader(file)
+        for row in reader:
+            print(', '.join(row))
+            
+    """
+    Read the contents of a CSV file and print it.
+    Args:
+        Filename: The name of the CSV file to read.
+    Result: 
+        The contents of the CSV file.
     """
