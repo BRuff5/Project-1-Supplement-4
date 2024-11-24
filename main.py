@@ -52,3 +52,16 @@ def read_and_display_csv(filename):
     Result: 
         The contents of the CSV file.
     """
+    
+if __name__ == "__main__":
+    user_input = input("Enter a number: ")
+    
+    """
+    Creates user input.
+    Args:
+        user_input: creates and stores user_input.
+    Result: 
+        input("Enter a number: ".
+    """
+    
+    
