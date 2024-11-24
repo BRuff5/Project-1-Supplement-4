@@ -75,7 +75,11 @@ if __name__ == "__main__":
     
     next_numbers = get_next_ten_numbers(num)
     
-    
+    """
+    Gets the next ten numbers
+    Args:
+       Get the next 10 numbers.
+    """
     
     next_numbers_string = list_to_comma_delimited_string(next_numbers)
     
@@ -83,4 +87,16 @@ if __name__ == "__main__":
     Convert the next numbers to a comma-delimited string
     Args:
        Convert the next numbers to a comma-delimited string
+    """
+    
+    
+    headers = ["Starting Number", "Next 10 Numbers"]
+    data = [str(number), next_numbers_string]
+    
+    """
+    Create headers and data for CSV file
+    Args:
+        Create headers and data for CSV file
+    Result:
+        Data and Headers stored in CSV file
     """
