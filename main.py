@@ -91,7 +91,7 @@ if __name__ == "__main__":
     
     
         headers = ["Starting Number", "Next 10 Numbers"]
-        data = [str(number), next_numbers_string]
+        data = [str(num), next_numbers_string]
     
         """
         Create headers and data for CSV file
@@ -114,10 +114,20 @@ if __name__ == "__main__":
     
         print(f"Next 10 numbers: {next_numbers_string}")
         print(f"Data written to '{filename}'")
-        
+        read_and_display_csv(filename)
         """Display results
         Args:
             pulls next_numbers_string and CSV (filename)
         Results:
             prints the data in the CSV file
         """
+
+    except ValueError:
+        print("Please enter a valid number.")
+        """
+        Args:
+            pulls the the user input 
+        Results:
+            If the input was valid or not
+        """
+         
