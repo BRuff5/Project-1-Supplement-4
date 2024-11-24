@@ -64,4 +64,13 @@ if __name__ == "__main__":
         input("Enter a number: ".
     """
     
+    try:
+        num = int(user_input)  
+        
+    """
+    Converts input to an integer.
+    Args:
+       Takes input and turns into integer
+    """
+    
     
