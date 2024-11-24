@@ -112,3 +112,12 @@ if __name__ == "__main__":
             CSV file is created and connected to program
         """
     
+        print(f"Next 10 numbers: {next_numbers_string}")
+        print(f"Data written to '{filename}'")
+        
+        """Display results
+        Args:
+            pulls next_numbers_string and CSV (filename)
+        Results:
+            prints the data in the CSV file
+        """
