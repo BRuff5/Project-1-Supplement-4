@@ -73,4 +73,9 @@ if __name__ == "__main__":
        Takes input and turns into integer
     """
     
-    
+    next_numbers = get_next_ten_numbers(num)
+    """
+    Gets the next ten numbers
+    Args:
+       Get the next 10 numbers.
+    """
